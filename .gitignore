@@ -3,4 +3,3 @@
 
 # Sensitive files
 .env
-backend/serviceAccountKey.json
