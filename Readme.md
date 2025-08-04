@@ -128,4 +128,3 @@ Created by **[@nakul-verma2](https://github.com/nakul-verma2)** — feel free to
 ---
 
 > **Note:** Please update or expand sections as features and documentation evolve, including API endpoints, environment variables, deployment steps, and advanced usage.
-```
