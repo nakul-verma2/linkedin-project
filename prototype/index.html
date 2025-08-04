@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <h2 class="nav-logo">LinkedIn Clone</h2>
+                <div class="nav-links" id="navLinks">
+                    <a href="#" onclick="showHome()">Home</a>
+                    <a href="#" onclick="showProfile()">Profile</a>
+                    <a href="#" onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Login/Register Form -->
+        <div id="authSection" class="auth-container">
+            <div class="auth-form">
+                <h2 id="authTitle">Login</h2>
+                <form id="authForm">
+                    <div id="nameField" class="form-group" style="display: none;">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div id="bioField" class="form-group" style="display: none;">
+                        <textarea id="bio" placeholder="Bio (optional)"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" id="authButton">Login</button>
+                </form>
+                <p class="auth-switch">
+                    <span id="authSwitchText">Don't have an account?</span>
+                    <a href="#" id="authSwitchLink" onclick="toggleAuth()">Register</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="mainContent" class="main-content" style="display: none;">
+            <!-- Home Feed -->
+            <div id="homeSection" class="content-section">
+                <div class="create-post">
+                    <h3>Create Post</h3>
+                    <form id="postForm">
+                        <textarea id="postContent" placeholder="What's on your mind?" required></textarea>
+                        <button type="submit">Post</button>
+                    </form>
+                </div>
+                <div class="posts-feed" id="postsFeed">
+                    <h3>Recent Posts</h3>
+                    <div id="postsContainer">
+                        <!-- Posts will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Section -->
+            <div id="profileSection" class="content-section" style="display: none;">
+                <div class="profile-info" id="profileInfo">
+                    <!-- Profile info will be loaded here -->
+                </div>
+                <div class="user-posts" id="userPosts">
+                    <!-- User's posts will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

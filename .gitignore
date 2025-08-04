@@ -1,0 +1,6 @@
+.DS_Store
+.next
+
+# Sensitive files
+.env
+backend/serviceAccountKey.json
